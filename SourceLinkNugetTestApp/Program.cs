@@ -9,6 +9,7 @@ namespace SourceLinkNugetTestApp
         static void Main(string[] args)
         {
             TestNugetFromPublicRepo();
+            TestNugetFromPublicRepoVer101();
             TestNugetFromPrivateRepo();
             TestNugetFromPrivateRepoVer101();
         }
@@ -31,7 +32,14 @@ namespace SourceLinkNugetTestApp
         {
             var c = new PrivateClass1();
             // TODO: Ucomment the following line if nuget version 1.0.1
-            // c.PrivateRepoTestNew();            
+            c.PrivateRepoTestNew();            
+        }
+
+        private static void TestNugetFromPublicRepoVer101()
+        {
+            var c = new Class1();
+            // TODO: Ucomment the following line if nuget version 1.0.1
+            c.NewTest();            
         }
 
         private static void TestNugetFromPublicRepo()
