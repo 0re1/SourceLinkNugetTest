@@ -10,6 +10,7 @@ namespace SourceLinkNugetTestApp
         {
             TestNugetFromPublicRepo();
             TestNugetFromPrivateRepo();
+            TestNugetFromPrivateRepoVer101();
         }
 
         private static void TestNugetFromPrivateRepo()
@@ -24,6 +25,13 @@ namespace SourceLinkNugetTestApp
             {
                 var x = e.Data;
             }
+        }
+
+        private static void TestNugetFromPrivateRepoVer101()
+        {
+            var c = new PrivateClass1();
+            // TODO: Ucomment the following line if nuget version 1.0.1
+            // c.PrivateRepoTestNew();            
         }
 
         private static void TestNugetFromPublicRepo()
